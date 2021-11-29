@@ -1,0 +1,16 @@
+$themeColor: #007aff !default;
+$kural: 'Kurale',
+serif;
+$os: 'Open Sans',
+sans-serif;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: $os;
+}
