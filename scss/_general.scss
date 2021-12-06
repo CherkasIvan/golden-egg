@@ -1,16 +1,55 @@
 $themeColor: #007aff !default;
-$kural: 'Kurale',
+$kurale: 'Kurale',
 serif;
 $os: 'Open Sans',
 sans-serif;
+$text: 18px;
+$white: #fff;
+$white-opacity: rgba(255,255,255,0.5);
+$black: #000;
+$yellow:#E8C300;
+$wrap: 1470px;
+$container: 1200px;
+$mc: 0 auto;
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin line {
+    content: "";
+    display: block;
+    width: 70px;
+    margin: $mc;
+    height: 5px;
+    background: $yellow;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 body {
-    background: #000000;
+    background: $white;
     font-family: $os;
+    color: $black;
+    font-size: $text;
+}
+
+.wrapper {
+    max-width: $wrap;
+    margin: $mc;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: $container;
+    margin: $mc;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
 }

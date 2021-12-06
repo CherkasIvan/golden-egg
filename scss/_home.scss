@@ -1,3 +1,156 @@
-.home{
-    background-color: #000000;
+.home {
+    position: relative;
+    min-height: 800px;
+    outline: 1px solid red;
+
+    &__img,
+    &__video {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__container {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+}
+
+.top-menu__list {
+    @include flex(center, center)
+}
+
+.top-menu__item {
+    margin: 0 5px;
+
+    a {
+        display: block;
+        padding: 40px 25px;
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.3s;
+        border-top: 5px solid transparent;
+
+        &:hover {
+            color: $yellow;
+            border-top: 5px solid $yellow;
+        }
+    }
+}
+
+.top-menu {
+    outline: 1px solid red;
+}
+
+.top-menu__logo {
+    margin: 0 60px;
+
+    img {
+        position: relative;
+        top: 15px;
+    }
+}
+
+.home__container-center {
+    @include flex(space-between, flex-start);
+    margin-top: 175px;
+    outline: 1px solid red;
+}
+
+.socials {
+    width: 62px;
+    margin-top: 40px;
+
+    a {
+        display: block;
+        height: 62px;
+        border-radius: 50%;
+        transition: 0.3s;
+        margin-bottom: 20px;
+
+        &:hover {
+            background: $yellow;
+        }
+    }
+}
+
+.home__text {
+    text-align: center;
+    outline: 1px solid red;
+
+    h6 {
+        color: $white;
+        font-size: $text;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        color: $yellow;
+        font-family: $kurale;
+        font-size: 72px;
+        margin-top: 25px;
+
+        &::after {
+            @include line;
+        }
+    }
+}
+
+.home__btns {
+    margin-bottom: 80px;
+
+    a {
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        margin: 0 20px;
+        color: $white;
+        border: 1px solid $white-opacity;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover {
+            background: $yellow;
+        }
+    }
+
+    .order-btn {
+        background-color: $yellow;
+        border: none;
+
+        &:hover {
+            background: lighten($yellow, 10%)
+        }
+    }
+}
+
+.arrow__about {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: $mc;
+}
+
+.time-work {
+    font-weight: 700;
+    font-size: 12;
+    color: $white;
+    transform: rotate(-90deg);
+    margin-top: 130px;
+    margin-left: -75px;
 }

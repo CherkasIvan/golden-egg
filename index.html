@@ -14,30 +14,62 @@
 </head>
 
 <body>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#facebook">
-            </use>
-        </svg>
-    </a>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#twitter">
-            </use>
-        </svg>
-    </a>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#instagram">
-            </use>
-        </svg>
-    </a>
-    <a href="#">
-        <svg>
-            <use xlink:href="img/sprite-icons.svg#arrow-down">
-            </use>
-        </svg>
-    </a>
+    <div class="wrapper">
+        <section class="home">
+            <!-- <img class="home__img" src="img/dish.jpg" alt="home__img"> -->
+            <video class="home__video" src="img/dish.mp4" autoplay loop muted></video>
+
+            <div class="home__container">
+                <div class="container">
+                    <nav class="top-menu">
+                        <ul class="top-menu__list">
+                            <li class="top-menu__item"><a href="#about">О ресторане</a></li>
+                            <li class="top-menu__item"><a href="#team">Команда</a></li>
+                            <li class="top-menu__item"><a href="#order">Заказать</a></li>
+                            <li class="top-menu__logo"><img src="img/logo.png" alt="logo"></li>
+                            <li class="top-menu__item"><a href="#menu">Меню</a></li>
+                            <li class="top-menu__item"><a href="#events">Мероприятия</a></li>
+                            <li class="top-menu__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container home__container-center">
+                    <div class="time-work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
+                    <div class="home__text">
+                        <h6>Ресторан</h6>
+                        <h1>Golden egg</h1>
+                        <div class="home__btns">
+                            <a href="#order" class="order-btn">Заказать столик</a>
+                            <a href="#about">О ресторане</a>
+                        </div>
+                        <a href="#about" class="arrow__about">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#arrow-down"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- End wrapper -->
+
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
